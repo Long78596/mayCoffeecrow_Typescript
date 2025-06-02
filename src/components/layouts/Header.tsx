@@ -164,10 +164,8 @@ export const Header = () => {
       {/* gioa diện dành cho mobile */}
 
 
-      <div className="block md:hidden py-14">
+      <div className="block md:hidden py-11">
         <div className="fixed top-0 left-0 w-full z-[999]">
-          {/* Navbar mobile */}
-          {/* Marquee banner */}
           <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee">
               <strong>
@@ -203,7 +201,7 @@ export const Header = () => {
 
         {/* Slide menu */}
         {isMenuOpen && (
-          <div className=" w-full h-full fixed left-0 top-[90px] z-[9999] flex">
+          <div className=" w-full h-full fixed left-0 top-[85px] z-[9999] flex">
             {/* Side menu */}
             <div
               className="flex-1 h-full w-[80vw] px-4 text-white"
@@ -224,7 +222,6 @@ export const Header = () => {
                   />
                 </div>
 
-                {/* Dropdown content */}
                 {open && (
                   <ul className="pl-4 text-lg text-white transition-all duration-300 my-2">
                     <li className="py-2 border-b border-white uppercase">
