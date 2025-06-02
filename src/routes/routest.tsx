@@ -3,7 +3,8 @@
 
 import { Home } from "../pages/Home/Home";
 
-import type { RouteObject } from "react-router-dom";
+import type { RouteObject } from "react-router";
+
 import { Login } from "../pages/Login/Login";
 import { Collections } from "../pages/Collections/Collections";
 import { ProductDetails } from "../pages/ProductDetails/ProductDetails";
