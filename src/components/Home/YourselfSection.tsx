@@ -1,6 +1,5 @@
-import React from "react";
 
-export const YourselfSection: React.FC = () => {
+export const YourselfSection= () => {
     const imageNames: string[] = ["yourself1", "yourself2", "yourself3", "yourself4"];
 
     return (
