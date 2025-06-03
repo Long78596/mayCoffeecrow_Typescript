@@ -4,7 +4,7 @@ import { whyUsData } from "../../data/Home/data";
 import type { WhyUsItem } from "../../types/Home/types";
 
 
-export const WhyUs: React.FC = () => {
+export const WhyUs = () => {
     return (
         <section className="container mt-10 mx-auto rounded-xl md:py-4 lg:py-6 px-4 md:px-6 lg:px-0">
             <div className="bg-[#fff0f0] mt-10 m-2 md:border">

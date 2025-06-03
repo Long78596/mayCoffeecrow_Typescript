@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
+import "swiper/swiper-bundle.css";
 import { Link } from "react-router-dom";
 import { banner } from "../../data/Shared/Banner.data";
 
@@ -12,17 +11,17 @@ export const Banner =()=>{
         <p className="text-2xl font-bold uppercase text-[#0a7485]">
           SHOP BY CATEGORY
         </p>
-        <div className="mt-6 lg:mt-10 m-2 justify-center items-center lg:py-10 py-6 ">
-                  <Swiper
-                    modules={[Navigation]}
-                    spaceBetween={40}
-                    navigation
-                    loop={true}
-                    breakpoints={{
-                      320: { slidesPerView: 1 },
-                      770: { slidesPerView: 2 },
-                      1256: { slidesPerView: 3 },
-                    }}
+        <div className="mt-6 lg:mt-10 m-2 justify-center  items-center lg:py-10 py-6 ">
+          <Swiper className="w-full max-w-screen-xl mx-auto"
+            modules={[Navigation]}
+            spaceBetween={40}
+            navigation
+            loop
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              770: { slidesPerView: 2 },
+              1256: { slidesPerView: 3 },
+            }}
                   >
                     {banner.map((slide, index) => (
                       <SwiperSlide key={index}>
