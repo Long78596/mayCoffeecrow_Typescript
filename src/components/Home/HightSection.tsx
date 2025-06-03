@@ -5,7 +5,7 @@ export const HightSection = () => {
 
     <section className="mt-5">
       <div className="container mx-auto md:px-6  px-4 lg:px-0">
-        <div className="bg-[#f2f195] rounded-xl flex flex-col lg;flex-row lg;pr-0">
+        <div className="bg-[#f2f195] rounded-xl flex flex-col lg:flex-row lg:pr-0">
           <div className="w-full lg:px-10 lg:py-10 px-6 py-6 lg:w-1/2  m-1  lg:m-10 text-[#0a7485] flex-col md:space-y-6 lg:pr-0 text-xl rounded-xl text-center lg:text-left pb-5 lg:pb-10">
             <p className="font-bold lg:text-4xl sm:text-[19px]">
               NEW ZEALAND'S FIRST SPECIALTY VIETNAMESE COFFEE BRAND
@@ -49,7 +49,7 @@ export const HightSection = () => {
 
           <img
             loading="eager"
-            className="lg:hidden pt-6 md:pt-10 w-full "
+            className="lg:hidden pt-6 md:pt-10  "
             src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/goodwitheverything.png?v=1699616208"
             alt=""
           />
@@ -57,7 +57,7 @@ export const HightSection = () => {
 
           {/* Ảnh nền desktop */}
           <div
-            className="hidden lg:block w-full lg:w-1/2 bg-cover bg-left-bottom bg-no-repeat rounded-r-xl"
+            className="hidden lg:block w-full lg:w-1/2 bg-cover bg-left-bottom bg-no-repeat min-h-[400px]"
             style={{
               backgroundImage:
                 "url('https://cdn.shopify.com/s/files/1/0611/1956/1867/files/beans.webp?v=1699100135')",

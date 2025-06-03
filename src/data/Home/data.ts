@@ -1,6 +1,6 @@
 // src/data.ts
 
-import type {WhyUsItem, FaqItem, CardItem, FeatureItem } from "../../types/Home/types";
+import type {ProductItem ,WhyUsItem, FaqItem, CardItem, FeatureItem, benefit, NewsSlide } from "../../types/Home/types";
 
 export const featureItems: FeatureItem[] = [
   {
@@ -119,5 +119,108 @@ export const whyUsData: WhyUsItem[] = [
     text: "Proudly promoting all coffees, including Robusta",
   },
 ];
+
+// data Component BestSellersSection
+
+// data/products.ts
+
+export const products: ProductItem[] = [
+  {
+    id: 1,
+    tag: "Best seller",
+    image: "//maycoffeecrew.co.nz/cdn/shop/files/N_1.png?v=1706686057&width=300",
+    name: "HONEYMOON (BLEND)",
+    description: "Crowd Pleaser - East Meets West",
+    details: "Our signature robusta and arabica blend – a match made in heaven! Honeymoon is recommended...",
+    link: "/products/honeymoon",
+  },
+  {
+    id: 2,
+    tag: "New",
+    image: "//maycoffeecrew.co.nz/cdn/shop/files/N_2.png?v=1706686057&width=300",
+    name: "SUNRISE ARABICA",
+    description: "Bright & Fruity",
+    details: "A single origin arabica with a fruity note, great for those who love a smooth start.",
+    link: "/products/sunrise",
+  },
+  {
+    id: 3,
+    tag: "Staff pick",
+    image: "//maycoffeecrew.co.nz/cdn/shop/files/N_2.png?v=1700628927&width=300",
+    name: "DARK NIGHT",
+    description: "Deep & Bold",
+    details: "Strong, bold, and perfect for late-night coffee lovers. This roast is intense and flavorful.",
+    link: "/products/dark-night",
+  },
+  {
+    id: 4,
+    tag: "Top Rated",
+    image: "//maycoffeecrew.co.nz/cdn/shop/files/Iced_Coffee_theme.png?v=1746788103&width=300",
+    name: "MORNING DEW",
+    description: "Light & Smooth",
+    details: "Perfect for the early risers – a smooth, light blend to gently start your day.",
+    link: "/products/morning-dew",
+  },
+];
+
+//data component Benefit
+
+export const benefits: benefit[] = [
+  {
+    title: "2X MORE CAFFEINE",
+    description:
+      "Robusta coffee delivers real energy without the jitters. Plus, save money by drinking less!",
+    image:
+      "https://maycoffeecrew.co.nz/cdn/shop/files/Layer_1.svg?v=1699451359",
+  },
+  {
+    title: "60% LESS SUGARS",
+    description: "Giving robusta beans the bold flavor profile we love.",
+    image:
+      "https://maycoffeecrew.co.nz/cdn/shop/files/Group_190.svg?v=1699451359",
+  },
+  {
+    title: "MORE ANTIOXIDANTS",
+    description:
+      "Robusta coffee has up to 80% more antioxidants than arabica beans.",
+    image:
+      "https://maycoffeecrew.co.nz/cdn/shop/files/Group_70.svg?v=1699451359",
+  },
+  {
+    title: "MORE RESISTANT",
+    description: "Robust and thriving through climate change.",
+    image:
+      "https://maycoffeecrew.co.nz/cdn/shop/files/Isolation_Mode.svg?v=1699451359",
+  },
+  {
+    title: "BOLD & SMOOTH",
+    description: "Strong and chocolatey flavour profile, low acidity.",
+    image:
+      "https://maycoffeecrew.co.nz/cdn/shop/files/Layer_1_1.svg?v=1699451359",
+  },
+];
+
+// data component news
+
+export const newsSlides: NewsSlide[] = [
+  {
+    img: "https://maycoffeecrew.co.nz/cdn/shop/articles/World_Coffee_Map.jpg?v=1707475411&width=500",
+    text: "A global Tour Of Coffee...",
+    date: "10 FEBRUARY 2024",
+  },
+  {
+    img: "https://maycoffeecrew.co.nz/cdn/shop/articles/Coffee_Bean_Storage.jpg?v=1707475527&width=500",
+    text: "A global Tour Of Coffee...",
+    date: "10 FEBRUARY 2024",
+  },
+  {
+    img: "https://maycoffeecrew.co.nz/cdn/shop/articles/Vietnamese_Coffee_Phin_Filter_Iced.jpg?v=1707474984&width=500",
+    text: "A global Tour Of Coffee...",
+    date: "10 FEBRUARY 2024",
+  },
+];
+
+
+
 
 

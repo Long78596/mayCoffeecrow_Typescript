@@ -64,12 +64,14 @@ export const Header = () => {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <div className="cursor-pointer flex items-center gap-1">
-                    SHOP{" "}
-                    <span>
-                      <  FaChevronDown className="text-white" />
-                    </span>
-                  </div>
+                  <Link to="/collections">
+                    <div className="cursor-pointer flex items-center gap-1">
+                      SHOP{" "}
+                      <span>
+                        <  FaChevronDown className="text-white" />
+                      </span>
+                    </div>
+                  </Link>
 
                   {/* Mega Dropdown */}
                   {showDropdown && (
