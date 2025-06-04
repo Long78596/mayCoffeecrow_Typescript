@@ -154,7 +154,7 @@ export const products: ProductItem[] = [
   },
   {
     id: 4,
-    tag: "Top Rated",
+    tag: "",
     image: "//maycoffeecrew.co.nz/cdn/shop/files/Iced_Coffee_theme.png?v=1746788103&width=300",
     name: "MORNING DEW",
     description: "Light & Smooth",

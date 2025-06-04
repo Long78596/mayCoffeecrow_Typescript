@@ -16,26 +16,33 @@ export const Footer = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <footer className="bg-white text-slate-800 px-4 md:px-6 py-12">
-      <section>
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <footer className="bg-white container mx-auto max-w-[1300px]  text-slate-800 px-4 md:px-6 py-12">
+      <section className="min-w-[1300px]">
+        <div className="container mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className=" lg:row-start-auto flex items-end justify-center lg:justify-end">
+            <img
+              loading="eager"
+              className="w-[80%]"
+              src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/3mascot.webp?v=1699621517"
+              alt=""
+            />
+          </div>
           <div className="rounded-xl bg-[#90e9f6] p-4 lg:p-8 flex flex-col justify-center space-y-2">
-            <p className="text-4xl font-medium text-[#0a7485]">
-              <strong>
+            <p className="text-4xl font-medium text-[#0a7485] some-class">
+             
                 JOIN THE CREW
-              </strong>
             </p>
-            <p className="text-2xl mt-2 text-[#0a7485]">
+            <p className="lg:text-xl md:text-xl mt-2 text-[#0a7485]">
               Get exclusive offers straight to your inbox - be the first to
               know.
             </p>
-            <input className="border border-black bg-white rounded-full h-[60px] w-full px-4 py-1 placeholder:text-2xl"
+            <input className="border border-[#0a7485] bg-white rounded-full lg:h-[40px] h-auto w-full px-4 py-1 placeholder:lg:text-xl"
               type="text"
               placeholder="Your name" />
-            <div className="flex rounded-full border border-primary bg-white pl-4">
+            <div className="flex rounded-full border border-[#0a7485] bg-white pl-4">
               <input
                 type="email"
-                className="border-none  border-black outline-none w-full h-[60px] bg-transparent placeholder:text-2xl"
+                className="border-none border-[#0a7485]   outline-none w-full lg:h-[58px] h-auto bg-transparent placeholder:lg:text-xl"
                 placeholder="Enter your Email"
                 required
               />
@@ -48,18 +55,11 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className=" lg:row-start-auto flex items-end justify-center lg:justify-end">
-            <img
-              loading="eager"
-              className="w-[80%]"
-              src="https://cdn.shopify.com/s/files/1/0611/1956/1867/files/3mascot.webp?v=1699621517"
-              alt=""
-            />
-          </div>
+          
         </div>
 
       </section>
-      <section className="mt-10">
+      <section className="mt-10 min-w-[1300px]">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row">
           <div className="w-[300px]  mx-auto space-x-1.5 lg:mx-0 flex flex-col items-center">
             <img
@@ -130,7 +130,7 @@ export const Footer = () => {
                       <li key={i}>
                         <Link
                           to={link.to}
-                          className="text-teal-800 text-xl block py-1"
+                          className="text-[#065e6c] text-xl block py-1"
                         >
                           {link.label}
                         </Link>

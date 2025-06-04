@@ -7,8 +7,8 @@ import { newsSlides } from "../../data/Home/data";
 
 export const News = () => {
     return (
-        <section className="container mx-auto mt-10 lg:mt-20 px-4 md:px-6 lg:px-0">
-            <p className="text-[#28707b] text-4xl font-bold uppercase text-center hover:underline">
+        <section className="container mx-auto max-w-[1300px] mt-10 lg:mt-20 md:py-4 lg:py-6 px-4 md:px-6 lg:px-0">
+            <p className="text-[#28707b] text-4xl some-class uppercase text-center hover:underline">
                 READ OUR LATEST NEWS
             </p>
 
@@ -28,17 +28,17 @@ export const News = () => {
                         <SwiperSlide key={index}>
                             <div className="min-w-[335px] flex flex-col items-center">
                                 <img src={slide.img} alt={`News ${index + 1}`} />
-                                <p className="text-xl text-[#28707b] text-center mt-4">
+                                <p className="md:text-xl  lg:text-xl text-[#28707b] text-center mt-4">
                                     {slide.date}
                                 </p>
-                                <p className="text-2xl font-bold text-[#28707b] text-center">
+                                <p className="md:text-xl  lg:text-xl font-bold text-[#28707b] text-center">
                                     {slide.text}
                                 </p>
 
                                 <div className="mt-6">
                                     <Link to="#">
-                                        <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-2xl hover:brightness-125">
-                                            READ MORE
+                                        <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase mb-6">
+                                            Read more
                                         </button>
                                     </Link>
                                 </div>

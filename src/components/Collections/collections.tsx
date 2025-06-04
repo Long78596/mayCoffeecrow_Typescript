@@ -9,14 +9,14 @@ export const ListProduct=()=>{
           <div className="flex flex-col space-y-10 px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
             <div>
               <div className="flex justify-between lg:items-center flex-col md:flex-row gap-2 lg:gap-4">
-                <p className="uppercase text-title font-bold text-[#0a7485]">
+                <p className="uppercase text-4xl  text-[#0a7485] some-class">
                   Coffee
                 </p>
                 
-                <div className="flex items-center space-x-1">
+                <div className="flex items-center space-x-1 text-xl">
                   <Link
                     to="/collections"
-                    className="text-submenu text-[#0a7485]"
+                    className="text-xl text-[#0a7485]"
                   >
                     See All
                   </Link>
@@ -53,15 +53,15 @@ export const ListProduct=()=>{
                     <div className="flex flex-col h-full justify-between text-center py-4">
                       <div>
                         <Link to="/products/buffalo">
-                          <span className="font-bold text-sm text-[#0a7485]">
+                          <span className="font-bold lg:text-xl  text-[#0a7485]">
                             {item.category}
                           </span>
                         </Link>
-                        <p className="text-neutral-500 text-xs uppercase">
+                        <p className="text-neutral-500   uppercase">
                           {item.name}
                         </p>
                       </div>
-                      <div className="text-xs text-[#0a7485] text-left mt-1">
+                      <div className="  text-[#0a7485] text-left mt-1">
                         {item.description}
                       </div>
                     </div>

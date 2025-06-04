@@ -12,7 +12,7 @@ import { phinSlides } from "../../data/Shared/Slider.data";
 export const VietnamesePhinSection= () => {
     return (
         <section>
-            <div className="container mx-auto mt-10 lg:mt-20 px-4 md:px-6 lg:px-0">
+            <div className="container mx-auto max-w-[1300px] mt-10 lg:mt-20 px-4 md:px-6 lg:px-0">
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 max-w-[913px] mx-auto">
                     <img
@@ -21,10 +21,10 @@ export const VietnamesePhinSection= () => {
                         alt="Phin Filter Icon"
                     />
                     <div className="flex flex-col justify-between text-center lg:text-left">
-                        <p className="text-2xl lg:text-xl font-bold uppercase text-[#0a7485]">
+                        <p className="lg:text-4xl text-2xl some-class uppercase text-[#0a7485]">
                             LEARN A NEW BREWING METHOD, EXPERIMENT WITH THE VIETNAMESE PHIN FILTER
                         </p>
-                        <p className="text-[#0a7485] text-xl mt-4 lg:mt-0">
+                        <p className="text-[#0a7485] text-xl mt-4 ">
                             Nourish your soul amidst the hustle with a mindful, slow-drip coffee.
                             Embrace this refreshing coffee experience in a bustling world!
                         </p>
@@ -47,7 +47,7 @@ export const VietnamesePhinSection= () => {
                             <SwiperSlide key={index}>
                                 <div className="min-w-[335px]">
                                     <img src={slide.img} alt={`Slide ${index + 1}`} />
-                                    <p className="text-[#0a7485] text-center mt-4 lg:mt-10">
+                                    <p className="text-[#0a7485] text-center mt-4 lg:mt-10 lg:text-xl md:text-xl">
                                         {slide.text}
                                     </p>
                                 </div>
@@ -58,9 +58,10 @@ export const VietnamesePhinSection= () => {
 
                 <div className="flex justify-center mt-6">
                     <Link to="#">
-                        <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-sm hover:brightness-125">
+                        <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase mb-6">
                             Get your phin filter
                         </button>
+                        
                     </Link>
                 </div>
             </div>

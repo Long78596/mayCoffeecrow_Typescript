@@ -1,22 +1,48 @@
+
 @import "tailwindcss";
+
 @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  .animate-marquee {
-    display: inline-block;
-    animation: marquee 15s linear infinite;
-  }
-  
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .stroke-text {
-    -webkit-text-stroke: 1px #065e6c; /* Màu viền xanh đậm */
-    color: #c5ecf6; /* Màu chữ nhạt */
-  }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.some-class {
+  font-family: fantasy;
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px #065e6c; /* Màu viền xanh đậm */
+  color: #c5ecf6; /* Màu chữ nhạt */
+}
+.container-auto {
+  max-width: 1300px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color:#0a7485 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.25rem;
+  color: #0a7485;
+}

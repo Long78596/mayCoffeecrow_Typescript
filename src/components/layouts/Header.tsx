@@ -29,16 +29,16 @@ export const Header = () => {
 
     <header className="w-full">
       <div className="hidden md:block"></div>
-      <div className="hidden md:block mt-0 md:mt-20 lg:mt-20">
-        <div className="bg-orange-200 lg:items-center lg:justify-center text-center font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999] py-2">
+      <div className="hidden md:block mt-0 md:mt-20 lg:mt-20 container mx-auto max-w-[1300px]">
+        <div className="bg-orange-200 lg:items-center lg:justify-center text-center font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999] py-1">
           <p>
             <strong>
               FREE SHIPPING ON ALL CANS - No Minimum Spend Needed!
             </strong>
           </p>
         </div>
-        <div className="fixed top-[32px] left-0 w-full z-[999] text-white py-2" style={{ backgroundColor: "rgb(18, 111, 134)" }}>
-          <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="  fixed top-[32px] left-0 w-full z-[999] text-white py-2" style={{ backgroundColor: "rgb(18, 111, 134)" }}>
+          <div className="container mx-auto max-w-[1300px]  flex justify-between items-center">
 
             {/* Icon */}
             <div className="flex gap-2 text-lg">
@@ -52,7 +52,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-1 py-1 bg-white rounded-full"
                   >
-                    <Icon className="cursor-pointer h-6 w-6 text-teal-800" />
+                    <Icon className="cursor-pointer h-6 w-6 text-[#0a7485]" />
                   </a>
                 );
               })}
@@ -84,7 +84,7 @@ export const Header = () => {
                                 className="flex space-x-2 items-center"
                                 to="/collections"
                               >
-                                <span className="font-anton text-xl text-teal-800">
+                                <span className="font-anton text-2xl text-[#0a7485]">
                                   SHOP ALL PRODUCTS
                                 </span>
                                 <div className="w-6">
@@ -95,16 +95,16 @@ export const Header = () => {
                               <div className="grid grid-cols-4 gap-8 mt-5">
                                 {shopItems.map((item, index) => (
                                   <Link key={index} to={item.href}>
-                                    <div className="flex flex-col justify-end space-y-4 h-full">
+                                    <div className="flex flex-col justify-end space-y-4 h-full text-[#0a7485">
                                       <img
                                         loading="eager"
                                         src={item.img}
                                         alt={item.alt}
                                       />
-                                      <p className="font-semibold uppercase text-xl">
+                                      <p className="font-semibold uppercase text-xl lg:text-2xl text-[#0a7485]">
                                         {item.title}
                                       </p>
-                                      <p className="text-xs">
+                                      <p className="lg:text-xl text-[#0a7485]">
                                         {item.description}
                                       </p>
                                     </div>
@@ -166,7 +166,7 @@ export const Header = () => {
       {/* gioa diện dành cho mobile */}
 
 
-      <div className="block md:hidden py-11">
+      <div className="block md:hidden py-11 md:py-4 lg:py-6 px-4 md:px-6 lg:px-0 mx-auto max-w-[1300px]">
         <div className="fixed top-0 left-0 w-full z-[999]">
           <div className="bg-orange-200 text-center py-2 text-sm font-semibold text-teal-700 overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee">

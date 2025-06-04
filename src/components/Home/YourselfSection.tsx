@@ -3,7 +3,7 @@ export const YourselfSection= () => {
     const imageNames: string[] = ["yourself1", "yourself2", "yourself3", "yourself4"];
 
     return (
-        <section className="mt-3 lg:mt-4 container mx-auto">
+        <section className="mt-3 lg:mt-4 max-w-[1300px] container mx-auto md:py-4 lg:py-6 px-4 md:px-6 lg:px-0">
             <div className="flex flex-col lg:flex-row items-center justify-center text-center gap-10 lg:px-14">
                 <img
                     className="w-24 lg:w-34 lg:h-54"
@@ -11,9 +11,10 @@ export const YourselfSection= () => {
                     loading="eager"
                     alt=""
                 />
-                <p className="text-2xl md:text-xl px-4 lg:px-8 font-bold text-center text-[#0a7485] uppercase">
+                <p className="text-4xl px-4 lg:px-8  text-center text-[#0a7485] uppercase some-class">
                     YOU&apos;LL FIND YOURSELF ENERGISED AFTER ONE SIP
                 </p>
+                
             </div>
 
             <div className="flex overflow-x-auto gap-4 mt-4 lg:mt-10">

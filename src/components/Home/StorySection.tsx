@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
+
 export const  StorySection=()=>{
     return <>
-        <section className="mt-10">
+        <section className="mt-10   md:py-4 lg:py-6 px-4 md:px-6 lg:px-0">
             {/* Desktop view */}
             <div
                 className="hidden lg:block bg-[#90e9f6] bg-no-repeat bg-top bg-cover lg:bg-contain bg-primary-300 pt-10 lg:py-20"
@@ -9,7 +11,7 @@ export const  StorySection=()=>{
                         "url('https://cdn.shopify.com/s/files/1/0611/1956/1867/files/ourstory_cloud.webp?v=1699064890')",
                 }}
             >
-                <div className="grid container mx-auto relative grid-cols-5 gap-8">
+                <div className="grid container mx-auto max-w-[1300px] relative grid-cols-5 gap-8">
                     <div>
                         <img
                             className="w-full"
@@ -26,7 +28,7 @@ export const  StorySection=()=>{
                             alt=""
                         />
                         <div className="mt-32">
-                            <p className="pr-[5%] leading-relaxed  text-[#0a7485] text-xl">
+                            <p className="pr-[5%] leading-relaxed  text-[#0a7485] lg:text-xl text-sm">
                                 As the first specialty Vietnamese coffee brand from New Zealand,
                                 <br />
                                 May Coffee Crew takes pride in showcasing the diversity of
@@ -49,11 +51,9 @@ export const  StorySection=()=>{
                                 Join us on this journey to reshape perceptions!
                             </p>
                             <div className="pt-8">
-                                <a href="https://maycoffeecrew.co.nz/pages/about-our-story">
-                                    <button className="bg-[#153e44] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-sm whitespace-nowrap hover:brightness-125">
-                                        Our story
-                                    </button>
-                                </a>
+                                <Link to="/collections" className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase mb-6">
+                                    Shop now
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ export const  StorySection=()=>{
                     </p>
                     <div className="flex justify-center lg:justify-start">
                         <a href="https://maycoffeecrew.co.nz/pages/about-our-story">
-                            <button className="bg-[#204f56] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-xl whitespace-nowrap hover:brightness-125">
+                            <button className="bg-[#0a7485] text-white rounded-full px-4 lg:px-12 py-2 font-medium uppercase text-xl whitespace-nowrap hover:brightness-125">
                                 Our story
                             </button>
                         </a>
