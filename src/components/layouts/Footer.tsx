@@ -17,8 +17,8 @@ export const Footer = () => {
   };
   return (
     <footer className="bg-white container mx-auto max-w-[1300px]  text-slate-800 px-4 md:px-6 py-12">
-      <section className="min-w-[1300px]">
-        <div className="container mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <section className="">
+        <div className="container mx-auto max-w-[1300px]  grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className=" lg:row-start-auto flex items-end justify-center lg:justify-end">
             <img
               loading="eager"
@@ -59,7 +59,7 @@ export const Footer = () => {
         </div>
 
       </section>
-      <section className="mt-10 min-w-[1300px]">
+      <section className="mt-10 ">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row">
           <div className="w-[300px]  mx-auto space-x-1.5 lg:mx-0 flex flex-col items-center">
             <img
