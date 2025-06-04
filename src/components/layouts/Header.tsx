@@ -30,7 +30,7 @@ export const Header = () => {
     <header className="w-full">
       <div className="hidden md:block"></div>
       <div className="hidden md:block mt-0 md:mt-20 lg:mt-20">
-        <div className="bg-orange-200 lg:items-center lg:justify-center text-center font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999] py-2">
+        <div className="bg-orange-200 lg:items-center lg:justify-center text-center font-semibold text-teal-700 fixed top-0 left-0 w-full z-[999] py-1">
           <p>
             <strong>
               FREE SHIPPING ON ALL CANS - No Minimum Spend Needed!
@@ -52,7 +52,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-1 py-1 bg-white rounded-full"
                   >
-                    <Icon className="cursor-pointer h-6 w-6 text-teal-800" />
+                    <Icon className="cursor-pointer h-6 w-6 text-[#065e6c]" />
                   </a>
                 );
               })}
